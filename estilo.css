@@ -1170,3 +1170,154 @@ footer {
     padding: 1.8rem 1.4rem;
   }
 }
+/* =============================================
+   FORMULARIO — Validación y animaciones
+   (añadido para script.js · no modifica diseño)
+============================================= */
+
+/* Error de campo inline */
+.form-group.has-error input,
+.form-group.has-error textarea {
+  border-color: #c0392b;
+  background: #fff8f7;
+}
+
+.field-error {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #c0392b;
+  margin-top: 2px;
+}
+
+/* Shake: sacudida sutil en campo con error */
+@keyframes ateluxa-shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-5px); }
+  40%       { transform: translateX( 5px); }
+  60%       { transform: translateX(-3px); }
+  80%       { transform: translateX( 3px); }
+}
+
+.shake {
+  animation: ateluxa-shake 0.38s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* Spinner dentro del botón */
+@keyframes ateluxa-spin {
+  to { transform: rotate(360deg); }
+}
+
+.btn-spinner {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid rgba(10,10,10,0.25);
+  border-top-color: var(--negro);
+  border-radius: 50%;
+  animation: ateluxa-spin 0.7s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* =============================================
+   TOAST — Notificación flotante elegante
+============================================= */
+.ateluxa-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.4rem;
+  background: var(--negro);
+  color: var(--blanco);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  border-radius: var(--r);
+  box-shadow: 0 16px 48px rgba(10,10,10,0.28);
+  z-index: 9999;
+  min-width: 260px;
+  max-width: 360px;
+  overflow: hidden;
+
+  /* Estado inicial: oculto abajo */
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.38s cubic-bezier(0.4,0,0.2,1),
+              transform 0.38s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Línea de acento izquierda según tipo */
+.ateluxa-toast::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--dorado);
+}
+
+.ateluxa-toast.toast-error::before {
+  background: #c0392b;
+}
+
+/* Visible */
+.ateluxa-toast.toast-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ícono */
+.toast-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--dorado);
+}
+
+.ateluxa-toast.toast-error .toast-icon {
+  color: #e74c3c;
+}
+
+/* Texto */
+.toast-text {
+  flex: 1;
+  line-height: 1.5;
+}
+
+/* Barra de progreso */
+.toast-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: var(--dorado);
+  width: 100%;
+  transform-origin: left;
+  animation: toast-shrink 4.5s linear forwards;
+}
+
+.ateluxa-toast.toast-error .toast-progress {
+  background: #e74c3c;
+}
+
+@keyframes toast-shrink {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+
+/* Responsive: toast en móvil */
+@media (max-width: 480px) {
+  .ateluxa-toast {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    max-width: none;
+    min-width: 0;
+  }
+}
