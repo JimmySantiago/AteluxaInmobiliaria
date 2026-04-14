@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATELUXA S.A.S. — Inmobiliaria de Confianza en Colombia</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       HEADER — Encabezado fijo con navegación
+  ============================================= -->
+  <header id="header">
+    <div class="container">
+      <div class="nav-inner">
+
+        <!-- Logo -->
+        <a href="#inicio" class="logo">
+          <span class="logo-nombre">ATELUXA</span>
+          <span class="logo-slogan">Inmobiliaria · Colombia</span>
+        </a>
+
+        <!-- Navegación de escritorio -->
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#propiedades">Propiedades</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Botón CTA -->
+        <a href="#contacto" class="btn btn-dorado nav-cta">Publica tu inmueble</a>
+
+        <!-- Botón hamburger (visible en móvil) -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú móvil superpuesto -->
+  <nav class="nav-mobile" id="navMobile" aria-label="Menú móvil">
+    <a href="#inicio"       class="nav-mob-link">Inicio</a>
+    <a href="#propiedades"  class="nav-mob-link">Propiedades</a>
+    <a href="#servicios"    class="nav-mob-link">Servicios</a>
+    <a href="#nosotros"     class="nav-mob-link">Nosotros</a>
+    <a href="#contacto"     class="nav-mob-link">Contacto</a>
+    <a href="#contacto" class="btn btn-dorado" style="margin-top:1rem">Publica tu inmueble</a>
+  </nav>
+
+
+  <!-- =============================================
+       HERO — Sección principal
+  ============================================= -->
+  <section id="inicio">
+
+    <!-- Fondo con imagen y gradiente -->
+    <div class="hero-bg"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <span class="label">Bienes raíces en Colombia</span>
+        <h1 class="hero-titulo">
+          Encuentra el lugar<br />
+          <em>ideal para vivir</em><br />
+          o invertir
+        </h1>
+        <p class="hero-sub">
+          Asesoría profesional en compra, venta y arriendo de propiedades.
+          Exclusividad, confianza y acompañamiento en cada paso.
+        </p>
+        <div class="hero-btns">
+          <a href="#propiedades" class="btn btn-dorado">Ver propiedades</a>
+          <a href="#contacto"    class="btn btn-outline-blanco">Hablar con un asesor</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estadísticas flotantes (ocultas en móvil) -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">+500</div>
+        <div class="stat-desc">Propiedades<br />gestionadas</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2</div>
+        <div class="stat-desc">Años de<br />experiencia</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">98%</div>
+        <div class="stat-desc">Clientes<br />satisfechos</div>
+      </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-hint">Explorar</div>
+
+  </section>
+
+
+  <!-- =============================================
+       PROPIEDADES DESTACADAS
+  ============================================= -->
+  <section id="propiedades">
+    <div class="container">
+
+      <!-- Encabezado con botón -->
+      <div class="props-header">
+        <div class="section-header" style="margin-bottom:0">
+          <span class="label">Portafolio exclusivo</span>
+          <h2 class="section-titulo">Propiedades<br />destacadas</h2>
+          <div class="section-linea"></div>
+        </div>
+        <a href="#contacto" class="btn btn-outline-dorado">Ver todo el portafolio</a>
+      </div>
+
+      <!-- Grid de propiedades -->
+      <div class="props-grid">
+
+        <!-- Propiedad 1 — Apartamento Bogotá -->
+        <article class="prop-card fade-up">
+          <div class="prop-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80"
+              alt="Apartamento moderno en Bogotá"
+              loading="lazy"
+            />
+            <span class="prop-badge">En venta</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-precio">$980.000.000 COP</div>
+            <div class="prop-ubicacion">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>-
+              Chapinero Alto, Bogotá
+            </div>
+            <p class="prop-desc">
+              Elegante apartamento con acabados de lujo, terraza privada y vista panorámica a los cerros orientales. Iluminación natural excepcional y zonas comunes de primer nivel.
+            </p>
+            <div class="prop-specs">
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                </svg>
+                120 m²
+              </span>
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                </svg>
+                3 hab.
+              </span>
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <path d="M4 4h16v7H4zM4 15h16v5H4z"/>
+                </svg>
+                2 baños
+              </span>
+            </div>
+            <a href="#contacto" class="btn btn-negro">Ver más</a>
+          </div>
+        </article>
+
+        <!-- Propiedad 2 — Casa Medellín -->
+        <article class="prop-card fade-up" style="transition-delay:0.12s">
+          <div class="prop-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=700&q=80"
+              alt="Casa campestre en Medellín"
+              loading="lazy"
+            />
+            <span class="prop-badge">En arriendo</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-precio">$8.500.000 / mes</div>
+            <div class="prop-ubicacion">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              El Poblado, Medellín
+            </div>
+            <p class="prop-desc">
+              Casa con diseño arquitectónico contemporáneo, jardín privado, piscina y sistema de domótica. Seguridad 24/7 en conjunto cerrado de alto perfil.
+            </p>
+            <div class="prop-specs">
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                </svg>
+                340 m²
+              </span>
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                </svg>
+                5 hab.
+              </span>
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <path d="M4 4h16v7H4zM4 15h16v5H4z"/>
+                </svg>
+                4 baños
+              </span>
+            </div>
+            <a href="#contacto" class="btn btn-negro">Ver más</a>
+          </div>
+        </article>
+
+        <!-- Propiedad 3 — Local Cali -->
+        <article class="prop-card fade-up" style="transition-delay:0.24s">
+          <div class="prop-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=80"
+              alt="Local comercial en Cali"
+              loading="lazy"
+            />
+            <span class="prop-badge">En venta</span>
+          </div>
+          <div class="prop-body">
+            <div class="prop-precio">$450.000.000 COP</div>
+            <div class="prop-ubicacion">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Granada, Cali
+            </div>
+            <p class="prop-desc">
+              Local en esquina con excelente visibilidad, zona de alto flujo peatonal y vehicular. Ideal para franquicias o negocios de alto rendimiento.
+            </p>
+            <div class="prop-specs">
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                </svg>
+                85 m²
+              </span>
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                </svg>
+                Comercial
+              </span>
+              <span class="spec">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9e9990" stroke-width="2">
+                  <rect x="3"  y="14" width="4" height="7"/>
+                  <rect x="10" y="10" width="4" height="11"/>
+                  <rect x="17" y="6"  width="4" height="15"/>
+                </svg>
+                Alta renta
+              </span>
+            </div>
+            <a href="#contacto" class="btn btn-negro">Ver más</a>
+          </div>
+        </article>
+
+      </div><!-- /props-grid -->
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SERVICIOS
+  ============================================= -->
+  <section id="servicios">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <span class="label">Lo que ofrecemos</span>
+        <h2 class="section-titulo" style="color:var(--blanco)">Nuestros servicios</h2>
+        <div class="section-linea"></div>
+      </div>
+
+      <div class="servicios-grid">
+
+        <!-- Compra y venta -->
+        <div class="servicio-item fade-up">
+          <div class="servicio-icono">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="servicio-titulo">Compra y venta</h3>
+          <p class="servicio-desc">
+            Gestionamos la compra y venta de propiedades residenciales, comerciales e industriales. Valuación precisa, estrategia de mercado y acompañamiento legal en cada transacción.
+          </p>
+        </div>
+
+        <!-- Arriendos -->
+        <div class="servicio-item fade-up" style="transition-delay:0.1s">
+          <div class="servicio-icono">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+              <line x1="1" y1="10" x2="23" y2="10"/>
+            </svg>
+          </div>
+          <h3 class="servicio-titulo">Arriendos</h3>
+          <p class="servicio-desc">
+            Encontramos el inquilino ideal para tu inmueble. Realizamos el estudio de crédito, redactamos el contrato y hacemos seguimiento periódico para garantizar la tranquilidad del propietario.
+          </p>
+        </div>
+
+        <!-- Administración -->
+        <div class="servicio-item fade-up" style="transition-delay:0.2s">
+          <div class="servicio-icono">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/>
+            </svg>
+          </div>
+          <h3 class="servicio-titulo">Administración</h3>
+          <p class="servicio-desc">
+            Nos encargamos de la gestión integral de tu propiedad: cobro de cánones, mantenimiento preventivo, rendición de cuentas mensual y atención de requerimientos a tiempo.
+          </p>
+        </div>
+
+        <!-- Asesoría de inversión -->
+        <div class="servicio-item fade-up" style="transition-delay:0.3s">
+          <div class="servicio-icono">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+              <polyline points="16 7 22 7 22 13"/>
+            </svg>
+          </div>
+          <h3 class="servicio-titulo">Asesoría de inversión</h3>
+          <p class="servicio-desc">
+            Identificamos oportunidades de inversión en el mercado inmobiliario colombiano. Análisis de rentabilidad, zonas de valorización y portafolios de activos para maximizar tu retorno.
+          </p>
+        </div>
+
+        <!-- Avalúos comerciales -->
+        <div class="servicio-item fade-up" style="transition-delay:0.4s">
+          <div class="servicio-icono">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <h3 class="servicio-titulo">Avalúos comerciales</h3>
+          <p class="servicio-desc">
+            Realizamos avalúos técnicos y comerciales con criterios de mercado actualizados. Documentación válida para trámites bancarios, herencias, fusiones empresariales y más.
+          </p>
+        </div>
+
+        <!-- Proyectos nuevos -->
+        <div class="servicio-item fade-up" style="transition-delay:0.5s">
+          <div class="servicio-icono">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 class="servicio-titulo">Proyectos nuevos</h3>
+          <p class="servicio-desc">
+            Accede a preventas y proyectos en construcción de los mejores desarrolladores del país. Cuotas flexibles y asesoría especializada para adquirir tu inmueble desde planos.
+          </p>
+        </div>
+
+      </div><!-- /servicios-grid -->
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       NOSOTROS
+  ============================================= -->
+  <section id="nosotros">
+    <div class="container">
+      <div class="nosotros-grid">
+
+        <!-- Imagen con decoraciones -->
+        <div class="nosotros-img-wrap fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80"
+            alt="Equipo ATELUXA en reunión profesional"
+            loading="lazy"
+          />
+          <div class="nosotros-badge">
+            <strong>12</strong>
+            <span>años de experiencia</span>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="nosotros-texto fade-up" style="transition-delay:0.15s">
+          <span class="label">Sobre nosotros</span>
+          <h2 class="section-titulo">Solidez y experiencia a tu servicio</h2>
+          <div class="section-linea"></div>
+
+          <p class="nosotros-intro" style="margin-top:1.2rem">
+            ATELUXA S.A.S. es una inmobiliaria colombiana fundada sobre tres pilares: confianza, transparencia y resultados. Desde nuestra fundación, hemos acompañado a cientos de familias e inversionistas a encontrar la propiedad perfecta o a rentabilizar su patrimonio de forma segura y eficiente.
+          </p>
+          <p class="nosotros-intro">
+            Contamos con un equipo multidisciplinario de asesores, abogados y expertos en mercado inmobiliario, comprometidos con ofrecer el más alto estándar de servicio en Colombia.
+          </p>
+
+          <!-- Misión y Visión -->
+          <div class="mv-grid">
+            <div class="mv-card">
+              <h4>Misión</h4>
+              <p>Conectar a las personas con el inmueble que transforma su calidad de vida, a través de un servicio personalizado, ético y eficiente.</p>
+            </div>
+            <div class="mv-card">
+              <h4>Visión</h4>
+              <p>Ser la inmobiliaria de mayor confianza en Colombia, reconocida por la excelencia, la innovación y el impacto positivo en cada comunidad donde operamos.</p>
+            </div>
+          </div>
+
+          <!-- Valores -->
+          <div class="valores-lista">
+            <span class="valor-chip">Transparencia</span>
+            <span class="valor-chip">Excelencia</span>
+            <span class="valor-chip">Compromiso</span>
+            <span class="valor-chip">Innovación</span>
+            <span class="valor-chip">Confianza</span>
+            <span class="valor-chip">Integridad</span>
+          </div>
+
+        </div><!-- /nosotros-texto -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       CONTACTO
+  ============================================= -->
+  <section id="contacto">
+    <div class="container">
+      <div class="contacto-grid">
+
+        <!-- Información de contacto -->
+        <div class="contacto-info fade-up">
+          <span class="label">Contáctanos</span>
+          <h2 class="section-titulo">Hablemos de tu próxima propiedad</h2>
+          <div class="section-linea"></div>
+          <p class="contacto-intro" style="margin-top:1.2rem">
+            Nuestro equipo está disponible para resolver todas tus dudas, programar visitas o guiarte en el proceso de compra, venta o arriendo. Escríbenos o llámanos.
+          </p>
+
+          <div class="contacto-items">
+
+            <!-- Teléfono -->
+            <div class="contacto-item">
+              <div class="ci-icono">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div class="ci-texto">
+                <strong>Teléfono</strong>
+                <span>+57 321 959 2782</span>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contacto-item">
+              <div class="ci-icono">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                </svg>
+              </div>
+              <div class="ci-texto">
+                <strong>WhatsApp</strong>
+                <span>+57 312 484 3857</span>
+              </div>
+            </div>
+
+            <!-- Correo -->
+            <div class="contacto-item">
+              <div class="ci-icono">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="ci-texto">
+                <strong>Correo electrónico</strong>
+                <span>ateluxa.21@gmail.com</span>
+              </div>
+            </div>
+
+            <!-- Dirección -->
+            <div class="contacto-item">
+              <div class="ci-icono">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="ci-texto">
+                <strong>Dirección</strong>
+                <span>Bogotá, Colombia</span>
+              </div>
+            </div>
+
+          </div><!-- /contacto-items -->
+
+          <!-- Horario -->
+          <div class="horario">
+            <p class="horario-label">Horario de atención</p>
+            <p class="horario-horas">
+              Lunes – Viernes: 8:00 am – 6:00 pm<br />
+              Sábados: 9:00 am – 1:00 pm
+            </p>
+          </div>
+
+        </div><!-- /contacto-info -->
+
+        <!-- Formulario de contacto -->
+        <div class="form-card fade-up" style="transition-delay:0.15s">
+          <h3>Envíanos un mensaje</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" placeholder="+57 300 000 0000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="correo@ejemplo.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <input type="text" id="servicio" placeholder="Compra, arriendo, administración…" />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Cuéntanos sobre la propiedad o servicio que necesitas…"></textarea>
+          </div>
+
+          <button type="button" class="btn btn-dorado" onclick="handleForm()">Enviar mensaje</button>
+
+          <p class="form-nota">
+            Al enviar aceptas nuestra
+            <a href="#">política de privacidad</a>.
+            Respondemos en menos de 24 horas.
+          </p>
+
+        </div><!-- /form-card -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER — Pie de página
+  ============================================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Columna de marca -->
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:1rem">
+            <span class="logo-nombre">ATELUXA</span>
+            <span class="logo-slogan">Inmobiliaria · Colombia</span>
+          </div>
+          <p>
+            Expertos en la gestión de propiedades residenciales y comerciales en Colombia.
+            Confianza, transparencia y resultados en cada operación.
+          </p>
+          <div class="redes">
+            <a href="#" class="red-link" aria-label="Facebook">fb</a>
+            <a href="#" class="red-link" aria-label="Instagram">ig</a>
+            <a href="#" class="red-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="red-link" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <!-- Columna de navegación -->
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#propiedades">Propiedades</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna de servicios -->
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="#servicios">Compra y venta</a></li>
+            <li><a href="#servicios">Arriendos</a></li>
+            <li><a href="#servicios">Administración</a></li>
+            <li><a href="#servicios">Avalúos</a></li>
+            <li><a href="#servicios">Inversión</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna legal -->
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Tratamiento de datos</a></li>
+            <li><a href="#">Matrícula inmobiliaria</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <!-- Barra inferior -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 ATELUXA S.A.S. Todos los derechos reservados.</p>
+        <span>NIT: 901.956.954-2 · Bogotá, Colombia · <a href="ateluxa.21@gmail.com">ateluxa.21@gmail.com</a></span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =============================================
+       JAVASCRIPT
+  ============================================= -->
+  <script>
+    /* --- Header: añade clase .scrolled al hacer scroll --- */
+    const header = document.getElementById('header');
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Asegurar fondo desde el inicio
+    header.classList.add('scrolled');
+
+
+    /* --- Hamburger: abre/cierra el menú móvil --- */
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMobile.classList.toggle('open');
+      document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Cerrar menú al hacer clic en cualquier enlace del menú móvil
+    document.querySelectorAll('.nav-mob-link, .nav-mobile .btn').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navMobile.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+
+    /* --- Animaciones fade-up con IntersectionObserver --- */
+    const fadeEls = document.querySelectorAll('.fade-up');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    fadeEls.forEach(el => observer.observe(el));
+
+
+    /* --- Validación básica del formulario de contacto --- */
+    function handleForm() {
+      const nombre  = document.getElementById('nombre').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+
+      if (!nombre || !email || !mensaje) {
+        alert('Por favor completa los campos obligatorios: nombre, correo y mensaje.');
+        return;
+      }
+
+      alert('¡Gracias ' + nombre + '! Tu mensaje ha sido recibido. Te contactaremos pronto.');
+    }
+  </script>
+
+</body>
+</html>
